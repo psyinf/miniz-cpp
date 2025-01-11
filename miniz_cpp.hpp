@@ -9406,7 +9406,7 @@ namespace miniz_cpp
             return ~oldcrc32;
         }
 
-        tm safe_localtime(const time_t &t)
+        static tm safe_localtime(const time_t &t)
         {
 #ifdef _WIN32
             tm time;
